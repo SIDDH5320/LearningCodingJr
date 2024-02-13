@@ -1,0 +1,21 @@
+@media only screen and (min-width: 320px) and (max-width:1200px){
+    .banner-body h1{
+        font-size: 30px;
+    }
+    .card-body h3{
+        font-size: 20px ;
+    }
+    .card-body p{
+        font-size: 16px;
+    }
+    .section-body h2 , .main-content h2 , .feedback-content h2 ,.Last-layout h2{
+        font-size:25px;
+    }
+    .footer-body p{
+        width: 135px;
+    }
+    
+     
+
+}
+

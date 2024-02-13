@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Junior</title>
+  <link rel="icon" href="img/icons8-learning-16.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <!-- Plyr CSS -->
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css">
+</head>
+<body>
+
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold me-5" href="#">Coding Jr</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white fw-bold me-3" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-bold me-3" href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-bold me-3" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-bold me-3" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="d-lg-flex d-block align-items-center">
+          <div class="nav-head">
+            <p class="text-light fw-bold me-3 pt-3 px-4">Login</p>
+          </div>
+          <button class="banner-button text-light border-0 mt-2">Become a member <i class="bx bx-right-arrow-alt ms-2 mx-2"></i></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner">
+    <div class="banner-body text-center text-light">
+      <h5 class="mt-5 pt-5">Online Training</h5>
+      <h1>25K+ STUDENTS TRUST US</h1>
+      <h4>We also have the testimonials of the students </h4>
+      <button class="Join-us btn btn-primary mt-5">Join us</button>
+    </div>
+  </div>
+</div>
+
+<main class="mt-5 pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <!-- Video Player Container -->
+        <div id="video-player-container" class="mb-3">
+          <video id="video-player" controls class="embed-responsive embed-responsive-16by9">
+            <source src="your-video-source.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="language-selection mb-3">
+          <label for="language-select" class="form-label">Select Language:</label>
+          <select id="language-select" class="form-select">
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <!-- Add more language options as needed -->
+          </select>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <div class="main-body">
+          <h2>Watch Our Courses</h2>
+          <p>Wanna Learn Full Stack Web Development??</p>
+          <a href="#">Learn More <i class="bx bx-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Repeat similar sections for article and div.container:last-child -->
+
+<footer class="mt-5 pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="footer-body">
+          <h3>Get In Touch</h3>
+          <p class="para my-4">the quick fox jumps over the lazy dog</p>
+          <div class="social">
+            <i class="bx bxl-facebook-circle mx-2"></i>
+            <i class="bx bxl-instagram mx-2"></i>
+            <i class="bx bxl-twitter mx-2"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="footer-body">
+          <h3>Coding Jr</h3>
+          <div class="temp-link my-4 d-flex">
+            <a href="#">About us</a>
+            <a href="#">Career</a>
+            <a href="#">We are hiring teachers
+            </a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat similar structures for other columns -->
+    </div>
+    <div class="row text-center mt-lg-5 pt-lg-5">
+      <div class="m_footer mt-lg-5 pt-lg-5">
+        <p>Siddh Shah @copyrights reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+<script>
+ 
+  document.addEventListener('DOMContentLoaded', function () {
+    const player = new Plyr('#video-player', {
+      
+    });
+  });
+
+  const languageSelect = document.getElementById('language-select');
+  languageSelect.addEventListener('change', function () {
+    
+    const selectedLanguage = languageSelect.value;
+
+   
+    console.log('Selected language:', selectedLanguage);
+  });
+</script>
+</body>
+</html>
